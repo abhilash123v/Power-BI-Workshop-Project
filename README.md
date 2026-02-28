@@ -43,6 +43,16 @@ Steps followed:
 __"Click on Close and Apply"__
 10. Created 4 KPI's,1 pie chart,1 line chart,1 clustered column chart.
 ##### Session-2:
-1. Append and merge data.
-2. Pivot and unpivot
-3. How to get data from multiple sources
+1. Append data using power query: Appending 2 tables 1 after the other(both must have same number of columns.
+2. Merge: Merge two tables using a common column just like joins in sql.
+3. Pivot and unpivot:_
+  Use Unpivot to turn columns into rows (ideal for time-series, creating attribute-value pairs), and Pivot to turn row values into column headers (aggregating data).
+  Both are found in the Transform tab. 
+4. Getting data into PowerBI from multiple sources.
+### 3
+#### Import and Work with data from multiple sources like:
+* CSV Files
+* Excel
+* SQL Databases
+* Web Sources
+* Cloud Platforms
