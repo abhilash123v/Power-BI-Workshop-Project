@@ -56,3 +56,13 @@ __"Click on Close and Apply"__
 * SQL Databases
 * Web Sources
 * Cloud Platforms
+  ##### SQL Databases: 3 different modes are available.
+  __Import mode__: PowerBI copies the data (entire table columns and data) in to power bi.
+  _Advantages_: Very fast performance,supports DAX
+  _Disadvantages_: Pbi doesn't get automatically updated when a new record gets added in database. you have to manually refresh.
+  ⏬To overcome this problem we use direct query⏬
+  __Direct Query Import__:PowerBI doesn't store data.Data stay in sql server only.Every visual sends a live query to sql server(live means real time).
+  _Advantages_:Only table structure gets loaded in pbi.memory of pbi not used.
+  _Disadvantages_: slower than import mode,you cannot do heavy transformations,Some DAX doesn't work.
+  __Dual mode__: Pbi looks at other tables used,if: 1) All other tables are import mode,dual table acts like import. 2)Even if one table is Direct query then dual mode switched to direct query.
+  ##### Connecting to Web Page url: \  Example: _Live currency converter rates data._Import the html table from page and try to join with your present own table and perform operations like add new columns.
